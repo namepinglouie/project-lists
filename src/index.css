@@ -12,6 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.project-list {
+  display: grid;
+  gap: 7px;
+}
+
 .project {
   border: 2px solid black;
   border-radius: 5px;
@@ -29,10 +34,12 @@
   border-radius: 50%;
 }
 
+
+
 .project_name {
   text-align: left;
   font-weight: bold;
-
+  grid-column: 2 / 4;
 }
 
 .project_description {

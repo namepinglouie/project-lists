@@ -1,9 +1,9 @@
-const Project = () => {
+const Project = ({project}) => {
     return (
         <article className="project">
-            <img src="src/assets/deno-icon.png"/>
-            <p className="project_name">Deno</p>
-            <p className="project_description">Test your Deno project</p>
+            <img src={project.imgPath}/>
+            <p className="project_name">{project.name}</p>
+            <p className="project_description">{project.description}</p>
             <button>Configure</button>
         </article>
     )
