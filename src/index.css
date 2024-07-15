@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color-scheme: light dark;
+  background-color:white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.project {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 375px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project img {
+  border: 2px solid grey;
+  width: 25px;
+  height: 25px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.project_name {
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.project_description {
+  text-align: left;
+  grid-row: 2;
+  grid-column: 2/5;
+  color: grey;
+}
+
+.project button {
+  text-align: center;
+  grid-column: 4;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  width: 75px;
+  height: 30px;
+  font-weight: bold;;
+  border-radius: 5px;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
